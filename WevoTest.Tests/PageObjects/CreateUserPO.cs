@@ -71,7 +71,7 @@ namespace WevoTest.Tests.PageObjects
 
         public void SubmitForm()
         {
-            _driver.FindElement(InputSubmit).Click();
+            _driver.FindElement(ByInputSubmit).Click();
         }
 
     }
