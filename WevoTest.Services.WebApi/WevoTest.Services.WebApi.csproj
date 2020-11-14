@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Flunt" Version="1.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WevoTest.Application\WevoTest.Application.csproj" />
+    <ProjectReference Include="..\WevoTest.Domain\WevoTest.Domain.csproj" />
+    <ProjectReference Include="..\WevoTest.Infra.CrossCutting.IoC\WevoTest.Infra.CrossCutting.IoC.csproj" />
+    <ProjectReference Include="..\WevoTest.Infra.Data\WevoTest.Infra.Data.csproj" />
+  </ItemGroup>
+
+
+</Project>
